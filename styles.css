@@ -10,6 +10,10 @@
 .reunion-posters .poster-rules{position:absolute;width:38%;left:-34px;bottom:-14px;transform:rotate(-4deg);z-index:3}
 @media(max-width:560px){.reunion-posters .poster-rules{width:42%;left:-8px;bottom:-4px}}
 
+.member-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1220px;margin:auto}.member-list article{display:flex;align-items:center;gap:14px;background:white;border:1px solid #dceaf8;border-radius:16px;padding:16px;box-shadow:0 7px 22px rgba(14,69,133,.06)}.member-list article>span{flex:0 0 40px;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#e8f3ff;color:var(--blue);font-weight:800;font-size:.78rem}.member-list strong,.member-list small{display:block}.member-list strong{color:var(--navy);font-size:.9rem}.member-list small{color:var(--muted);margin-top:2px}.member-list small:before{content:"Địa chỉ: ";color:var(--blue);font-weight:600}
+@media(max-width:900px){.member-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.member-list{grid-template-columns:1fr}.member-list article{padding:14px}}
+
 /* Album gồm một ảnh nổi bật và bốn khoảnh khắc hoạt động. */
 .gallery{grid-template-columns:1.35fr 1fr 1fr}
 @media(max-width:560px){.gallery{grid-template-columns:1fr;grid-template-rows:320px repeat(4,230px)}}
